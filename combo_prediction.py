@@ -88,25 +88,25 @@ max_xy_range = 0.5
 variable_noise_rms = True
 # maximum rms of noise data
 max_noise_rms = 0.1
-# num_samp = number of test samples
-num_samp = 1000
+# n_samp = number of test samples
+n_samp = 1000
 # chunk_size = batch number: how many test examples to pass at one time.
 chunk_size = 50
 
-# X = numpy array holding the images
-X = np.zeros((num_samp, numpix_side * numpix_side), dtype='float32')
-# Y = numpy array holding the lens parameters
+# X (array): ndarray holding the images
+# Y (array): ndarray holding the lens parameters
+# Predictions: predicted lens parameters
+X = np.zeros((n_samp, numpix_side * numpix_side), dtype='float32')
+Y = np.zeros((n_samp, num_out), dtype='float32')
+Predictions = np.zeros((n_samp, num_out), dtype='float32')
 # Here, Y is only used to flip for the x-y ellipticity
-Y = np.zeros((num_samp, num_out), dtype='float32')
-# Predictions = predicted lens parameters
-Predictions = np.zeros((num_samp, num_out), dtype='float32')
-mag = np.zeros((num_samp,1))
+mag = np.zeros((n_samp,1))
 read_data_batch(X, Y, mag, max_num_test_samples, 'test')
 
 cost = 0.0
-ind_t = range(num_samp)
+ind_t = range(n_samp)
 sum_rms = 0
-num_chunks = num_samp/chunk_size
+num_chunks = n_samp/chunk_size
 
 # loop over our samples
 # We can't give all of the test data at once because of limited gpu memory)
