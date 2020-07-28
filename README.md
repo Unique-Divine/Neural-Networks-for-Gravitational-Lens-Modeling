@@ -26,8 +26,7 @@ You can now run through the ipython notebook and model gravitational lenses with
 
 ## 3.  TODO: 
 - Change demo file to run on TensorFlow 2 so that you can run it in a kaggle kernel. (https://github.com/tensorflow/models/issues/7767) Recent TensorFlow updates have broken the demo.
-- Recreate the entire implementation in PyTorch, even if for no other reason than just practice.
-- 
+- Recreate the entire implementation in PyTorch, even if for no other reason than just to practice.
 
 ------
 ### Source note:
