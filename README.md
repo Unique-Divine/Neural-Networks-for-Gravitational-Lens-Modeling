@@ -25,9 +25,11 @@ You can now run through the ipython notebook and model gravitational lenses with
 2) You can use "init.py" to setup the models. Then with "single_model_predictions.py" you can get the predictions of a single network. Alternatively, after running "init.py". you can run "combo_prediction.py", to combine the 4 models (see the paper referenced above). If you'd like to train your own model, use "train.py". You can train the existing models (there're about 11 models defined in "ensai_model.py").
 
 ## 3.  TODO: 
-- Change demo file to run on Tensorflow 2 so that you can run it in a kaggle kernel. (https://github.com/tensorflow/models/issues/7767)
+- Change demo file to run on TensorFlow 2 so that you can run it in a kaggle kernel. (https://github.com/tensorflow/models/issues/7767) Recent TensorFlow updates have broken the demo.
+- Recreate the entire implementation in PyTorch, even if for no other reason than just practice.
+- 
 
 ------
 ### Source note:
-This repo was originally forked from [Yashar Hezaveh](https://github.com/yasharhezaveh/Ensai) in May 2019. I've since gone a different direction with the project.  
+This repo was originally forked from [Yashar Hezaveh](https://github.com/yasharhezaveh/Ensai) in May 2019. I began working on the code that Summer at UIUC in the lenstronomy group with Joaquin Vieira. I've since gone a different direction with the project.  
 > The results of this work have been published in a Nature letter "Fast Automated Analysis of Strong Gravitational Lenses with Convolutional Neural Networks" (Hezaveh, Perreault Levasseur, Marshall, 2017) and another paper, "Uncertainties in Parameters Estimated with Neural Networks: Application to Strong Gravitational Lensing", submitted to the Astrophysical Journal Letters (Perreault Levasseur, Hezaveh, and Wechsler, 2017).
