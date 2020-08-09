@@ -7,8 +7,8 @@ The best place to start is the ipython notebook. It has a quick demonstration of
 
 ## 1. Software needed:
 * Python 3
-* Tensorflow 1.1x. 
-   * I used pip to install this. Going to (https://www.tensorflow.org/install/) might be helpful.
+* TensorFlow 1.1x. (coming soon to TensorFlow 2)
+   * I used pip to install this, following the instructions at [tensforflow.org](https://www.tensorflow.org/install/).
 
 ## 2.  The data: 
 The files (especially the trained network weights) are too large to be hosted here. They can be found at the following links.
@@ -20,7 +20,7 @@ The files (especially the trained network weights) are too large to be hosted he
 You can now run through the ipython notebook and model gravitational lenses with neural networks!
 
 #### If you'd like to get your hands a bit more dirty:
-1) The data provided here is just for fun. You can produce simulated data using the following script: "[src/Lensing_TrainingImage_Generator.m](https://github.com/Unique-Divine/Neural-Networks-for-Gravitational-Lens-Modeling/tree/master/src)". This is a matlab script that contains all the required functions to generate simulated lenses. The only thing needed for this is a sample of unlensed images (e.g., from the GalaxyZoo, or GREAT3 datasets). 
+1) The data provided here is just for fun. You can produce simulated data using the following script: "[src/Lensing_TrainingImage_Generator.m](https://github.com/Unique-Divine/Neural-Networks-for-Gravitational-Lens-Modeling/tree/master/src)". This is a MATLAB script that contains all the required functions to generate simulated lenses. The only thing needed for this script is a sample of unlensed images (e.g., from the GalaxyZoo, or GREAT3 datasets). 
 
 2) You can use "init.py" to setup the models. Then with "single_model_predictions.py" you can get the predictions of a single network. Alternatively, after running "init.py". you can run "combo_prediction.py", to combine the 4 models (see the paper referenced above). If you'd like to train your own model, use "train.py". You can train the existing models (there're about 11 models defined in "ensai_model.py").
 
@@ -30,5 +30,5 @@ You can now run through the ipython notebook and model gravitational lenses with
 
 ------
 ### Source note:
-This repo was originally forked from [Yashar Hezaveh](https://github.com/yasharhezaveh/Ensai) in May 2019. I began working on the code that Summer at UIUC in the lenstronomy group with Joaquin Vieira. I've since gone a different direction with the project.  
+This repo was originally forked from [Yashar Hezaveh](https://github.com/yasharhezaveh/Ensai) in May 2019. I began working on the code that Summer (2019) at UIUC in the lenstronomy group with Joaquin Vieira. I've since gone a different direction with the project.  
 > The results of this work have been published in a Nature letter "Fast Automated Analysis of Strong Gravitational Lenses with Convolutional Neural Networks" (Hezaveh, Perreault Levasseur, Marshall, 2017) and another paper, "Uncertainties in Parameters Estimated with Neural Networks: Application to Strong Gravitational Lensing", submitted to the Astrophysical Journal Letters (Perreault Levasseur, Hezaveh, and Wechsler, 2017).
