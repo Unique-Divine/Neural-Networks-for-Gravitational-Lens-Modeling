@@ -12,10 +12,9 @@ This phenomenon of light following these distortions in space-time is known as *
 Gravitational lensing is observed when a light source and an observer have some object between them—such as galaxy, cluster of galaxies, or a black hole—that is massive enough to act as a lens. Very distant galaxies can be magnified through the phenomenon of gravitational lensing. 
 
 
-![Einstein Ring](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Einstein ring captured by Hubble of LRG 3-757 (2007)")
+![Einstein Ring](https://github.com/Unique-Divine/Neural-Networks-for-Gravitational-Lens-Modeling/blob/master/images/Hubble_Einstein_Ring.jpg "Einstein ring captured by Hubble of LRG 3-757 (2007)")
 
-![Einstein Cross](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Here are four images of the same quasar sitting behind Huchra’s Lens. The feature in the center is the core of the foreground galaxy. This arrangement is known as an Einstein cross.
-")
+![Einstein Cross](https://github.com/Unique-Divine/Neural-Networks-for-Gravitational-Lens-Modeling/blob/master/images/Einstein_cross.jpg "Here are four images of the same quasar sitting behind Huchra’s Lens. The feature in the center is the core of the foreground galaxy. This arrangement is known as an Einstein cross.")
 
 
 ## Update, August 2020
