@@ -1,5 +1,9 @@
 from PIL import Image
-import tensorflow as tf
+
+# import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
+
 import scipy.ndimage
 from scipy import misc
 from scipy.interpolate import RectBivariateSpline
@@ -10,11 +14,15 @@ import time
 import os
 import gc
 import scipy.io
-slim = tf.contrib.slim
+
+# tf.contrib is deprecated in TensorFlow 2.0
+# See https://bit.ly/33J2xW5
+# slim = tf.contrib.slim  
+
 
 print("starting init.py...")
 
-num_out = 5    #number ouf output parameters being predicted
+n_out = 5    #number of output parameters being predicted
 
 global numpix_side
 numpix_side = 192   #number of image pixels on the side
@@ -77,7 +85,7 @@ exec(open("./get_data.py").read())
 # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% MODEL DEFINITION
 
 x = tf.placeholder(tf.float32, shape=[None, numpix_side*numpix_side])   #placeholder for input image
-y_ = tf.placeholder(tf.float32, shape=[None,num_out])    #placeholder for output parameters during training
+y_ = tf.placeholder(tf.float32, shape=[None,n_out])    #placeholder for output parameters during training
 x_image0 = tf.reshape(x, [-1,numpix_side,numpix_side,1])
 
 # removing image intensity bias: filter image with a 4X4 filter and remove from image
