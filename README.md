@@ -9,9 +9,7 @@ According to Einstein's general theory of relativity, gravity is most accurately
 Althought light moves in straight lines, if space-time is bent or distorted, then light, which has no mass, must follow these distortions. 
 This phenomenon of light following these distortions in space-time is known as **gravitational lensing**. 
 
-Gravitational lensing is observed when a light source and an observer have some object between them—such as galaxy, cluster of galaxies, or a black hole—that is massive enough to act as a lens . 
-
-Very distant galaxies can be magnified through the phenomenon of gravitational lensing. 
+Gravitational lensing is observed when a light source and an observer have some object between them—such as galaxy, cluster of galaxies, or a black hole—that is massive enough to act as a lens. Very distant galaxies can be magnified through the phenomenon of gravitational lensing. 
 
 
 ![Einstein Ring](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Einstein ring captured by Hubble of LRG 3-757 (2007)")
@@ -40,7 +38,6 @@ TODO:
 - **Training**: 
   1.  Run "init.py" to setup the models. 
   2.  Run "single_model_predictions.py" to receive predictions from a single network. OR, run "combo_prediction.py" to combine the 4 models (see the paper referenced below). If you'd like to train your own model, use "train.py". You can train the existing models (there're about 11 models defined in "ensai_model.py").
-
 
 ------
 ## Acknowledgements \& References:
